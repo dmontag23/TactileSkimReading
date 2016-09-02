@@ -1,0 +1,106 @@
+MetecBD_Test = test program for MetecBD.DLL
+
+With this program you can test MetecBD.DLL.
+
+calling sequence:  MetecBD_Test [ testoutputfile ]
+
+Without the parameter testoutputfile the testoutput is written on the standard
+output.
+
+Py default, all calls of the functions of MetecBD.DLL are reporbed on the
+testoutputfile.
+
+You can start the program more then once. if the testoutpub is redirected,  all
+instances of MetecBD_Test writes the testoutput on the same file.
+
+To use MetecBD_Test type in one command per line on the standard input. You can
+also redirect (dynamically) the inputfile.
+
+There are following commands:
+
+    l filename = set A NEW logfilename
+	"-" = stadard output
+
+    t flags = set testswitches
+	1 = write calls
+	2 = write driver infos
+	4 = write data of the write-command
+	8 = write vendor-request-data if call failled
+	15 = 1 | 2 | 4 | 8 = write all
+
+    e [ enumarate all connected devices
+
+    i [ devicedata ] = initiate device
+	divisedata can be
+	    - a number (followed by other characters = the number of
+	      the filename \\.\mitsuusb0, \\.\mitsuusb1, ...
+	    - a string, beginning with "<" e.g. "<Bra" or ">BrailleDis" which
+	    represents the beginning of the device-name
+
+    d data   [ devnr ] = display data
+	data is the type of data to be written:
+	    d = device info
+	    i = device-id-string
+	    p = pipe-info
+
+    r [ len [ devnr ] ] [ filename ] = read data
+	len = no of bytes; maximal & default = 1500
+	The readed data are written on the tesbfile for testswitch & 2 =
+	driverinfo.
+	The maximum and Default for len is 1500.
+	if you use a filename, the read data are  appended to "filename"
+
+    w len [ hex-data ] [ rep-count ] [ devnr ] = write data
+	len = no of bytes
+	heex-data = data to be written in hex-format (otherwise MetecBD_Test
+	writes 000...
+	repcount = repetition count of the data
+
+    v hex-data ] [ devnr ] = vendor request
+	sends 8 bytes as vendor request
+
+    h state [ devnr ] = high voltage on / off
+	state = 1: high voltage on
+	state = 0: high voltage off
+
+    m no [ devnr ] = set no of modules
+
+    p ms = pause for ms milliseconds
+
+    f filename [ times ] = process filename as command input file
+	times = read file "times" times
+
+    c [ devnr ] = close device
+
+    x = exit program
+
+a little sample:
+
+create file "x" with following content:
+
+w 42
+p 2000
+w 42 ff00 21
+p 2000
+w 42 00ff 21
+p 2000
+w 42 ff 42
+p 2000
+
+Then type in:
+
+i
+f x 20
+c
+x (or ^z)
+
+Then the METECLSB-LINE will change its content 20 times:
+    - blank
+    - every second module set
+    - all other modules set
+    - all modules set
+
+[ devnr ] is always an other device-number then returned from initialization of
+the device.
+
+For the METECUSB-LINE hexa 80 corresponds to dot 1, hexa 01 to dot 8.

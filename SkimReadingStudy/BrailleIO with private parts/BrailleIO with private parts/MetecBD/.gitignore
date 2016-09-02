@@ -1,0 +1,6 @@
+/Debug/*.tlog
+/Debug/*.log
+/Release/*.tlog
+*.tlog
+*.log
+/Debug/*.cache

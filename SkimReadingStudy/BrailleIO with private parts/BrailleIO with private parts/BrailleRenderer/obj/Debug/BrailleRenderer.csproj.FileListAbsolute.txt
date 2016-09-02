@@ -1,0 +1,48 @@
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\Resources\de-chardefs8.cti
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\Resources\digits6DotsPlusDot6.uti
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\Resources\unicode.dis
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\BrailleRenderer.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\BrailleRenderer.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\BrailleIO_Interfaces.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\BrailleIO_Interfaces.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\obj\Debug\BrailleRenderer.csprojResolveAssemblyReference.cache
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\obj\Debug\BrailleIO.BrailleRenderer.Properties.Resources.resources
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\obj\Debug\BrailleRenderer.csproj.GenerateResource.Cache
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\obj\Debug\BrailleRenderer.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\obj\Debug\BrailleRenderer.pdb
+G:\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\Resources\de-chardefs8.cti
+G:\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\Resources\digits6DotsPlusDot6.uti
+G:\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\Resources\unicode.dis
+G:\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\BrailleRenderer.dll
+G:\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\BrailleRenderer.pdb
+G:\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\BrailleIO_Interfaces.dll
+G:\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\BrailleIO_Interfaces.pdb
+G:\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\obj\Debug\BrailleRenderer.csprojResolveAssemblyReference.cache
+G:\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\obj\Debug\BrailleIO.BrailleRenderer.Properties.Resources.resources
+G:\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\obj\Debug\BrailleRenderer.csproj.GenerateResource.Cache
+G:\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\obj\Debug\BrailleRenderer.dll
+G:\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\obj\Debug\BrailleRenderer.pdb
+F:\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\Resources\de-chardefs8.cti
+F:\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\Resources\digits6DotsPlusDot6.uti
+F:\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\Resources\unicode.dis
+F:\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\BrailleRenderer.dll
+F:\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\BrailleRenderer.pdb
+F:\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\BrailleIO_Interfaces.dll
+F:\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\BrailleIO_Interfaces.pdb
+F:\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\obj\Debug\BrailleRenderer.csprojResolveAssemblyReference.cache
+F:\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\obj\Debug\BrailleIO.BrailleRenderer.Properties.Resources.resources
+F:\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\obj\Debug\BrailleRenderer.csproj.GenerateResource.Cache
+F:\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\obj\Debug\BrailleRenderer.dll
+F:\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\obj\Debug\BrailleRenderer.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\Resources\de-chardefs8.cti
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\Resources\digits6DotsPlusDot6.uti
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\Resources\unicode.dis
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\BrailleRenderer.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\BrailleRenderer.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\BrailleIO_Interfaces.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\bin\Debug\BrailleIO_Interfaces.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\obj\Debug\BrailleRenderer.csprojResolveAssemblyReference.cache
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\obj\Debug\BrailleIO.BrailleRenderer.Properties.Resources.resources
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\obj\Debug\BrailleRenderer.csproj.GenerateResource.Cache
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\obj\Debug\BrailleRenderer.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\BrailleRenderer\obj\Debug\BrailleRenderer.pdb

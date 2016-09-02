@@ -1,0 +1,191 @@
+Neues BrailleDis
+----------------
+
+Das neue BrailleDis mit 2 Sensoren pro Modul ist in den Wrapper integriert.
+
+Für das alte BrailleDis funktioniert der Wrapper nach aussen im Prinzip noch
+immer wie bisher. Ausnahmen:
+
+    - Folgende Set-Properties wurden gelöscht:
+	LowerKeys
+	UpperKeys
+	ExtraKeys
+	Extra_Spezial /// returns the state of the key extra (Spezial), (not
+	part of hardware!
+    Die entsprechenden Get-Properties sind obssoleted.
+
+Neuerungen:
+-----------
+
+Neu muss die MetecBD.Dll anstelle der BrailleDis.Dll verwendet werden. Beide
+Dll's haben die gleichen Funktions-Aufrufe. BrailleDis.dll unterstützt aber das
+neue Interface nicht und wird nicht mehr gewartet.
+
+Die MetecBD kann die Daten beim lesen der Wouch-Sensoren in zwei Formaten zurück
+geben:
+
+    - altes Format wie bisher (im Wrapper nicht mehr verwendet).
+
+    - Neues Format:
+	[0] = Record-Kennung (0 = altes, 1 = neues BrailleDis)
+	[1] = Paket-Nummer
+	[2] = Zeit in Millisekunden seit dem letzten Lesen
+	[3] = Zeit in  Milli-Sekunden bis zum nächsten Lesen
+	[4-5] = Länge des Records (1488)
+	[6-7] = Reserve
+	[8-1447] = 1440 Sensor-Werte
+	[1448-1487] = 5 mal 8 Bytes für die Tastenwerte.
+
+Beim Lesen des alten BrailleDis werden die einzelnen Touch-Sensoren-Reihen
+jeweils verdoppelt, so dass auch hier 1440 Sensor-Werte zurück gegeben werden.
+Die Werte der Tastatur werden ebenfalls angepasst und die zwei "falschen" Bits
+werden "gedreht".
+
+Ob es sich um ein altes oder neues BrailleDis handelt, kann dabei aufgrund des
+"Device-Strings" oder aufgrund der "Record-Kennung" beim Lesen der
+Referenz-Daten im neuen Interface-Format festgestellt werden.
+
+Im "Device-String" ist dies die Property
+    USB-Interface Vers:<01#01>
+"<01#..> entspricht dabei dem alten, "<02#..>" dem neuen BrailleDis.
+
+Im Wrapper wird aber die "Record-Kennung" verwendet, die beim Lesen der
+Referenz-Daten zurück gegeben wird. Für das alte BrailleDis wird dabei die
+Variable private int m_deviceGeneration = 0; auf 1 = erste Generation, für das
+neue BrailleDis auf 2 = zweite Generation gesetzt.
+
+Ausserhalb des  Wrappers kann die Generation des BrailleDis nach dem Einlesen
+der Referenzdaten mit folgender Property abgefragt werden:
+    public int NumberOfSensorRows
+Dabei wird für das alte BrailleDis 12 und für das neue BrailleDis  24 zurück
+gegeben.
+
+Dementsprechend werden bei den Events die Touch-Zeilennummern für das alte
+BrailleeDis wieder auf 0 - 11 zurück gerechnet bzw. für das neue BraileeDis
+als 0 - 23 zurück gegeben.
+
+Dieses Verhalten kann sehr einfach abgeändert werden. In
+    BrailleDisNet.cs
+    BrailleDisNet_InputThread.cs
+hat es je zwei "todo"-Zeilen. Sie enthalten die Anweisung, wie dafür gesorgt
+werden kann, dass  der Wrapper
+    - ein altes als ein neues BrailleDis mit 24 Sensor-Zeilen bzw.
+    - ein neues als ein altes BrailleDis mit 12 Sensor-Zeilen
+verarbeiten soll. Dabei müssen die  aenderungen immer bei beiden  *.cs-Files
+parallel vorgenommen werden. - Dies erlaubt z.B.
+
+    - Das neue BrailleDis als altes BrailleDis zu verwenden, bis die
+    Gesten-Erkennung angepasst ist
+
+    - das alte BraileDis wie ein neues BrailleDis zu verwenden, um in der
+    Gestenerkennung nicht zwischen dem alten und neuen BrailleDis unterscheiden
+    zu müssen.
+
+
+..\HBInterfaces\IBrailleDis.cs
+------------------------------
+
+In diesem File ist folgende Struktur definiert:
+    public struct BrailleDisModuleState
+Sie enthält ein neues Feld
+    private int generation;
+Dieses Feld kann mit folgender Property abgefragt  werden:
+    public int Generation
+Dabei bedeutet:
+    0 = unbekannd (Fehler!)
+    1 = erste Generation = Sensor-Row 0 - 11
+    2 = zweite Generation = Sensor-Row 0 - 23
+
+    Die bisherige Property
+
+public int ModuleRow
+gibt nach wie vor die Nummer des Modules zurück = immer nur 0 - 11. Beim neuen
+BrailleDis kann es so sehr leicht vorkommen, dass jeweils 2 Events mit der
+gleichen ModuleRow/ModuleColumn gesandt werden.
+
+Die neue Property
+    public int SensorRow
+gibt  dagegen die "Sensor-Row" zurück, also je nach BrailleDis 0 - 11 oder 0 -
+23.
+
+Für das neue BrailleDis gilt dabei:
+    - gerade Zahl !(SensorRow & 1): oberer Sensor eines Moduls
+      ungerade Zahl (SensorRow & 1): unterer Sensor eines Moduls
+
+
+Keyboard
+--------
+
+Die analogen Tassten des neuen BrailleDis werden die gleichen Bits wie das
+alte BrailleDis besitzen. Darüber hinaus besitzt das neue BrailleDis weitere
+Tassten. - Alle Tassten sind in  BrailleDisStructs.cs definiert und zwar in
+    public struct BrailleDisConsts
+finden Sie sie mit "public const UInt64 KEY_"
+
+Abgesehen von neuen Konstruktoren besitzt die
+    public struct BrailleDisKeyboard
+folgende neue Get- und Set-Property:
+    public UInt64 AllKeys
+Dabei gilt:
+    - AllKeys & 0xff = byte 0 der zurückgegebenen Bytes = bisheriges
+    LowerKeyss-Byte
+    - AllKeys & 0xff00 = byte 1 der zurückgegebenen Bytes = bisheriges
+    UpperKeyss-Byte
+    - AllKeys & 0xff0000 = byte 2 der zurückgegebenen Bytes
+    - etc.
+Achtung: Gegenüber der Harrdware sind im PC jeweils 2 neben einander liegende
+Bytes geswappt!
+
+
+Leseloop des Wrappers
+---------------------
+
+Bisher konnte via die MetecBD.dll entweder nur gelesen oder geschrieben werden.
+Um dies zu gewährleisten, wurden beim Lesen und Schreiben im Wrapper je ein
+lock(...) verwendet.
+
+In der MetecBD.dll ist nun neu auch das parallele Lesen und Schreiben möglich.
+Dabei sorgt diese DLL neu, wenn nötig,  selbst für ein Lock. Deshalb wurde im
+Leseloop des Wrappers das lock(...) entfernt.
+
+Beim Schreiben können  fehler auftreten (BrdWriteData gibt False zurück).
+In diesem Fall wird einfach erneut geschrieben.
+
+In der Firmware wurde ein neues Uebermittlungsprotokoll realisiert.
+
+    - Bisher wurde bei jedem Read-Befehl das jeweils aktuelle Paket gesandt.
+    Bei zu frühem Lesen wurde deshalb jeweils das gleiche Paket neu gesandt. Bei
+    zu langer Zeit zwischen zwei Lese-Befehlen ging dagegen ein Paket verloren.
+
+    - Nur für das neue BrailleDis wurde folgendes neue Protokoll realisiert: Bei
+    einem Lese-Befehl prüft die Firmware, ob das aktuelle Paket bereits gesandt
+    wurde. Wenn nein, wird dieses gesandt. Andernfalls wird direkt nach dem
+    Generieren des nächsten Paketes das neue Paket gesandt.
+
+Bisher musste im Wrapper aufgrund der"Wartezeit" im Paket immer ausgerechnet
+werden, wann das neue Paket zur Verfügung steht. Das Warten auf das neue Paket
+geschah dann im Leseloop mit einem Sleep. - Diese Methode steht für das alte
+BrailleDis noch immer zur Verfügung.
+
+a40m neuen BrailleDis wird der Sleep im Leseloop nicht ausgeführt, sondern
+direkt nach dem letzten Durchgang durch den Leseloop  BrdReadData erneut
+aufgerufen. Wenn bereits ein Paket wartet, gibt BrdReadData dieses sofort
+zurück. Andernfalls wartet BrdReadData im Read-Befehl, bis es das neue Paket
+erhält und gibt dann dieses zurück.
+
+Da im BrdReadData mit einem WaitForSingleObject gewartet wird, ist die neue
+Methode ebenso effizient wie das Sleep der alten Methode. Zudem werden die Daten
+gemäss eingehenden Tests 15 - 20 ms früher geliefert.
+
+Es gehen bedeutend weniger Pakete verloren. So ging heute bei einem Stresstest
+im TAWIS von 455'000 Paketen bis jetzt noch kein einziges verloren. Der Grund
+für dieses verbesserte Verhalten liegt darin, dass ein Paket
+
+    - während 100 statt nur 50 ms  abgeholt werden kann
+
+    - das Read auch dann funktioniert, wenn der Thread während des Wartens den
+    Prozessor nie erhält. - Vorher konnte ein Paket verloren gehen, wenn der
+    Thread nach dem Sleep den Prozessor zu spät erhielt.
+
+
+Richterswil, 15. 9.   2010 F. Lüthi

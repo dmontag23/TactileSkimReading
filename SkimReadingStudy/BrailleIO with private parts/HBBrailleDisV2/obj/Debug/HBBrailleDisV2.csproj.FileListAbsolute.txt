@@ -1,0 +1,32 @@
+C:\Users\mauro.avila\Documents\Storage\StuttgartPHD\Braille display\BrailleIO with private parts\HBBrailleDisV2\bin\Debug\MetecBD.dll
+C:\Users\mauro.avila\Documents\Storage\StuttgartPHD\Braille display\BrailleIO with private parts\HBBrailleDisV2\bin\Debug\HBBrailleDisV2.dll
+C:\Users\mauro.avila\Documents\Storage\StuttgartPHD\Braille display\BrailleIO with private parts\HBBrailleDisV2\bin\Debug\HBBrailleDisV2.pdb
+C:\Users\mauro.avila\Documents\Storage\StuttgartPHD\Braille display\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.csprojResolveAssemblyReference.cache
+C:\Users\mauro.avila\Documents\Storage\StuttgartPHD\Braille display\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.SplashSerialInfo.resources
+C:\Users\mauro.avila\Documents\Storage\StuttgartPHD\Braille display\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.csproj.GenerateResource.Cache
+C:\Users\mauro.avila\Documents\Storage\StuttgartPHD\Braille display\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.dll
+C:\Users\mauro.avila\Documents\Storage\StuttgartPHD\Braille display\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.pdb
+C:\Users\Dillon\Documents\Stuttgart Research Summer 2016\Braille display\BrailleIO with private parts\HBBrailleDisV2\bin\Debug\MetecBD.dll
+C:\Users\Dillon\Documents\Stuttgart Research Summer 2016\Braille display\BrailleIO with private parts\HBBrailleDisV2\bin\Debug\HBBrailleDisV2.dll
+C:\Users\Dillon\Documents\Stuttgart Research Summer 2016\Braille display\BrailleIO with private parts\HBBrailleDisV2\bin\Debug\HBBrailleDisV2.pdb
+C:\Users\Dillon\Documents\Stuttgart Research Summer 2016\Braille display\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.csprojResolveAssemblyReference.cache
+C:\Users\Dillon\Documents\Stuttgart Research Summer 2016\Braille display\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.SplashSerialInfo.resources
+C:\Users\Dillon\Documents\Stuttgart Research Summer 2016\Braille display\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.csproj.GenerateResource.Cache
+C:\Users\Dillon\Documents\Stuttgart Research Summer 2016\Braille display\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.dll
+C:\Users\Dillon\Documents\Stuttgart Research Summer 2016\Braille display\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\PDFAnalyzer\PDFAnalyzer\BrailleIO with private parts\HBBrailleDisV2\bin\Debug\MetecBD.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\PDFAnalyzer\PDFAnalyzer\BrailleIO with private parts\HBBrailleDisV2\bin\Debug\HBBrailleDisV2.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\PDFAnalyzer\PDFAnalyzer\BrailleIO with private parts\HBBrailleDisV2\bin\Debug\HBBrailleDisV2.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\PDFAnalyzer\PDFAnalyzer\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.csprojResolveAssemblyReference.cache
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\PDFAnalyzer\PDFAnalyzer\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.SplashSerialInfo.resources
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\PDFAnalyzer\PDFAnalyzer\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.csproj.GenerateResource.Cache
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\PDFAnalyzer\PDFAnalyzer\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\PDFAnalyzer\PDFAnalyzer\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\HBBrailleDisV2\bin\Debug\MetecBD.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\HBBrailleDisV2\bin\Debug\HBBrailleDisV2.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\HBBrailleDisV2\bin\Debug\HBBrailleDisV2.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.csprojResolveAssemblyReference.cache
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.SplashSerialInfo.resources
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.csproj.GenerateResource.Cache
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.pdb

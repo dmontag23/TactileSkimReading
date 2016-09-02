@@ -1,0 +1,5 @@
+C:\Users\mauro.avila\Documents\Storage\StuttgartPHD\Braille display\BrailleIO with private parts\BrailleIOPrivateExample\bin\Debug\BraillIOExample.exe.config
+C:\Users\mauro.avila\Documents\Storage\StuttgartPHD\Braille display\BrailleIO with private parts\BrailleIOPrivateExample\obj\x86\Debug\BrailleIOPrivateExample.csprojResolveAssemblyReference.cache
+C:\Users\mauro.avila\Documents\Storage\StuttgartPHD\Braille display\BrailleIO with private parts\BrailleIOPrivateExample\obj\x86\Debug\BraillIOExample.Properties.Resources.resources
+C:\Users\mauro.avila\Documents\Storage\StuttgartPHD\Braille display\BrailleIO with private parts\BrailleIOPrivateExample\obj\x86\Debug\BrailleIOPrivateExample.csproj.GenerateResource.Cache
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Braille display\BrailleIO with private parts\BrailleIOPrivateExample\bin\Debug\BraillIOExample.exe.config

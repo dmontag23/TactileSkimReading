@@ -1,0 +1,1 @@
+Description of the functions of MetecBD.DLL please see in MetecBD.h

@@ -1,0 +1,71 @@
+Brailledismodule Pinzuordnung und Touchinitialisierung über die  Brailledis.Dll                      21.10.08
+
+ 
+Die bis jetzt definierte einfache Funktion BrdWriteData gibt das gesamte Bild mit
+720 Worten aus.
+Jedes Wort ist das Pinmusters eines 2 x 5 Moduls, die restl. Bits sind unbenutzt.
+Die Stifte sind folgendermaßen angeordnet:
+
+O   Pin 1 0x001    O Pin 2 0x002
+O   Pin 2 0x004    O Pin 3 0x008
+O   Pin 4 0x010    O Pin 5 0x020
+O   Pin 6 0x040    O Pin 7 0x080
+O   Pin 8 0x100    O Pin 9 0x200
+
+Das erste Wort ist das Modul links oben, nach 60 Worten geht es in der 2. Zeile von Modulen weiter.
+
+Das Auslesen der Touchwerte erfolgt mit der Funktion BrdReadData
+
+In der Firmware des USB Controllers wird die Platte alle 50ms durchgescannt. Es steht also max. alle 50ms ein
+neuer Satz an Touchwerten an.
+Die Funktion BrdReadData sollte deshalb alle 50ms aufgerufen werden. 
+(Eine Syncronisation erfolgt zur Zeit noch nicht)
+Der Wert des Touchsensors ist 8 Bit groß, wobei Bit 0 und 1 ausmaskiert werden muss.
+
+Vor dem Auslesen der Touchwerte muss Refsoll abgeglichen werden.
+Die Einstellung des Sollwerts für die Einstellung der Referenzwerte der Touchsensoren
+erfolgt mit dem Aufruf BrdCommand und dem Commandbyte 1 für SensorInit im data[0].
+Als Parameter in data[2] gibt es zur Zeit:
+0xc0 alle Refsoll Werte werden gleich initialisiert. Bei Ref = Messkapazität wird 75% Messbereich ausgegeben
+0x80 alle Refsoll Werte werden gleich initialisiert. Bei Ref = Messkapazität wird 50% Messbereich ausgegeben
+0xFF individueller Abgleich. Alle Module werden gemessen und dann wird versucht jedes einzelne auf 50% Messbereich einzustellen
+In data[1] steht der Messbereich 0=normal; 1=empfindlicher (nur Versuchsweise, geht nicht mit allen Modulen....)
+ 
+ 
+Nach dem Sensorinit benötigt der USB Controller ca. 500ms Pause. 
+Danach beendet ein BrdWriteData Aufruf die initialisierung.
+Da nicht alle Sensoren auf 50% abgeglichen werden können muss jetzt trotzdem noch für jedes Modul der  aktuelle Wert als
+Ruhewert zum Vergleich gespeichert werden.
+
+Die Tastenbits kommen angehängt an die Touchwerte: 
+Seit V081021: 
+Touch einscannen und Tasten lesen ist nun nicht mehr freilaufend sondern vom Timer synchronisiert.
+Touch alle 50ms, Tasten alle 10ms.
+An den Touchwerten hängen folgende Daten:
+touch[720] Telegrammnummer fortlaufend.
+touch[721] Zeit in ms seit letztem abgeschlossenen Touch Scan
+touch[722] Zeit in ms bis zum nächsten abgeschlossenen Touch Scan
+[723], [724] neuestes Tastenmuster
+[725], [726] 10ms älteres Tastenmuster
+[725], [726] 20ms älteres Tastenmuster
+[725], [726] 30ms älteres Tastenmuster
+[725], [726] 40ms älteres Tastenmuster
+
+Tastenmuster:
+erstes Byte  Daumentasten Bit 0 rechts; Bit 1 links
+zweites Byte Brailletasten von links nach rechts: Bit 3,2,1,0, 5,4,6,7
+ 
+ 
+
+CommandByte 2 schaltet die HV Spannung entsprechend dem Bit 0 von Data[1]
+ 
+
+Versuchsweise gibt es das Programm brdistst bei dem mit folgenden Kommandos die dll ausprobiert werden kann:
+
+t 15        ;alle Testausgaben ein
+i           ;initialisiert Treiber
+v 0100FF    ;BrdCommandaufruf mit Daten 01,00,0xff für individuellen Abgleich
+w 1440 0000 720 ;Init Ende alle Stifte aus  BrdWriteData Aufruf mit allen 1440 Bytes
+v 0201      ; BrdCommandaufruf mit Daten 02,01 schaltet HV Spannung ein
+r           ;liest die Sensordaten  BrdReadData
+ 

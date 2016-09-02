@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GestureRecognizerBase</name>
+    </assembly>
+    <members>
+        <member name="T:Gestures.Recognition.Preprocessing.BlobTracker">
+            <summary>
+            Tracks blobs or touch values on the surface through the time 
+            and therefore computes trajectories of a single touch say a 
+            moving finger.
+            </summary>
+        </member>
+        <member name="T:Gestures.Recognition.Interfaces.ITrackBlobs">
+            <summary>
+            Provides methods for initiate and perform blob tracking of sensor data within a frame.
+            </summary>
+        </member>
+        <member name="M:Gestures.Recognition.Preprocessing.BlobTracker.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Gestures.Recognition.Preprocessing.BlobTracker"/> class.
+            </summary>
+        </member>
+        <member name="M:Gestures.Recognition.Preprocessing.BlobTracker.InitiateTracking">
+            <summary>
+            Initiates the tracking.
+            </summary>
+        </member>
+        <member name="M:Gestures.Recognition.Preprocessing.BlobTracker.AddFrame(Gestures.Recognition.GestureData.Frame)">
+            <summary>
+            Adds a new frame of sensor data.
+            </summary>
+            <param name="frame">The frame.</param>
+        </member>
+        <member name="P:Gestures.Recognition.Preprocessing.BlobTracker.TrackedBlobs">
+            <summary>
+            Gets the tracked blobs.
+            </summary>
+            <value>The tracked blobs.</value>
+        </member>
+        <member name="E:Gestures.Recognition.Preprocessing.BlobTracker.OnTrackedFrame">
+            <summary>
+            Occurs when a frame is tracked.
+            </summary>
+        </member>
+        <member name="T:Gestures.Recognition.Interfaces.IClassify">
+            <summary>
+            Provides interface for classification of some input to some result.
+            </summary>
+        </member>
+        <member name="M:Gestures.Recognition.TapClassifier.CheckForTapGestures(Gestures.Recognition.GestureData.TrackedGesture,Gestures.Geometrie.Vertex.Vertex@)">
+            <summary>
+            Checks for tap gestures.
+            </summary>
+            <param className="clusteredSamples">The clustered samples.</param>
+            <returns>Number of Taps detected, -1 if no tap gesture could be recognized.</returns>
+        </member>
+        <member name="T:Gestures.Recognition.MultitouchClassifier">
+            <summary>
+            A classifier to be used by a <see cref="!:HBGestureRecognizer"/> recognizer instance.
+            </summary>
+        </member>
+        <member name="M:Gestures.Recognition.MultitouchClassifier.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Gestures.Recognition.MultitouchClassifier"/> class.
+            </summary>
+        </member>
+        <member name="M:Gestures.Recognition.MultitouchClassifier.Classify(Gestures.Recognition.GestureData.TrackedGesture)">
+            <summary>
+            Classifies the specified input data.
+            </summary>
+            <param name="inputData">The input data.</param>
+            <returns>a classification result containing name and parameter of the recognized gesture if
+            recognition succeeds, null otherwise.</returns>
+        </member>
+        <member name="T:GestureRecognition.Clusterer">
+            <summary>
+            Clusters sensor data made available to a braille display representation of type <typeparamref name="BrailleDisplay"/>.
+            </summary>
+        </member>
+        <member name="M:GestureRecognition.Clusterer.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:GestureRecognition.Clusterer"/> class.
+            </summary>
+        </member>
+        <member name="M:GestureRecognition.Clusterer.Cluster(System.Double[0:,0:],System.Double)">
+            <summary>
+            Clusters the sensor data in the braille display representation regarding to some specified threshold.
+            </summary>
+            <param name="threshold">The threshold.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Gestures.Recognition.GestureData.Touch">
+            <summary>
+            Touch contact on the surface, i.e. closed area or cluster of sensor values.
+            </summary>
+        </member>
+        <member name="T:Gestures.Recognition.GestureData.Frame">
+            <summary>
+            A sample of the sensor data, i.e. all current touches during one sampling step.
+            </summary>
+        </member>
+        <member name="T:Gestures.Recognition.GestureData.Gesture">
+            <summary>
+            Single multitouch gesture, consisting of several <see cref="T:Gestures.Recognition.GestureData.GestureToken"/>.
+            </summary>
+        </member>
+        <member name="M:Gestures.Recognition.GestureData.Gesture.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Gestures.Recognition.GestureData.Gesture"/> class.
+            </summary>
+        </member>
+        <member name="M:Gestures.Recognition.GestureData.Gesture.#ctor(Gestures.Recognition.GestureData.GestureToken[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Gestures.Recognition.GestureData.Gesture"/> class.
+            </summary>
+            <param name="token">Array of gestures tokens.</param>
+        </member>
+        <member name="P:Gestures.Recognition.GestureData.Gesture.Item(System.Int32)">
+            <summary>
+            Gets the <see cref="T:Gestures.Recognition.GestureData.GestureToken"/> at the specified index.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Gestures.Recognition.GestureData.Gesture.Count">
+            <summary>
+            Gets the number of the gestures tokens.
+            </summary>
+            <value>The number of tokens.</value>
+        </member>
+        <member name="P:Gestures.Recognition.GestureData.Gesture.Tokens">
+            <summary>
+            Gets or sets the tokens the gesture consists of.
+            </summary>
+            <value>The tokens.</value>
+        </member>
+        <member name="T:Gestures.Recognition.GestureData.TrackedGesture">
+            <summary>
+            A gesture composed by the blob tracker and therefore no template but actual input.
+            </summary>
+        </member>
+        <member name="T:Gestures.Recognition.GestureData.GestureToken">
+            <summary>
+            Smallest component of a gesture. Actual consiting of input points with time stamps.
+            </summary>
+            <remarks>
+            Gesture tokens appear as trajectories and are output of the blob tracking procedure.
+            </remarks>
+        </member>
+        <member name="M:Gestures.Recognition.GestureData.GestureToken.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Gestures.Recognition.GestureData.GestureToken"/> class.
+            </summary>
+        </member>
+        <member name="M:Gestures.Recognition.GestureData.GestureToken.#ctor(System.Int32,Gestures.Geometrie.Vertex.Sample[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Gestures.Recognition.GestureData.GestureToken"/> class.
+            </summary>
+            <param name="id">The id.</param>
+            <param name="points">Set of sample points forming a trajectory.</param>
+        </member>
+        <member name="P:Gestures.Recognition.GestureData.GestureToken.Count">
+            <summary>
+            Gets or sets the number of sample points.
+            </summary>
+            <value>Number of sample points.</value>
+        </member>
+        <member name="P:Gestures.Recognition.GestureData.GestureToken.Id">
+            <summary>
+            Gets or sets the id.
+            </summary>
+            <value>The id.</value>
+        </member>
+        <member name="P:Gestures.Recognition.GestureData.GestureToken.Samples">
+            <summary>
+            Gets or sets the samples.
+            </summary>
+            <value>The samples.</value>
+        </member>
+        <member name="P:Gestures.Recognition.GestureData.GestureToken.Item(System.Int32)">
+            <summary>
+            Gets the <see cref="T:Gestures.Geometrie.Vertex.Sample"/> at the specified index.
+            </summary>
+            <value></value>
+        </member>
+        <member name="T:Gestures.Recognition.GestureRecognizer">
+            <summary>
+            A gesture recognizer that supports multi touch on a touch display.
+            </summary>
+        </member>
+        <member name="T:Gestures.Recognition.Interfaces.IRecognizeGestures">
+            <summary>
+            Provides methods of a gesture recognizer composed of different classifiers.
+            </summary>
+        </member>
+        <member name="T:Gestures.Recognition.Interfaces.ISynchronizable">
+            <summary>
+            Provides Property to lock on for synchronization purposes.
+            </summary>
+        </member>
+        <member name="P:Gestures.Recognition.Interfaces.ISynchronizable.SynchLock">
+            <summary>
+            Gets the synchronization lock.
+            </summary>
+            <value>The synchronization lock.</value>
+        </member>
+        <member name="M:Gestures.Recognition.GestureRecognizer.#ctor(Gestures.Recognition.Interfaces.ITrackBlobs)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Gestures.Recognition.GestureRecognizer"/> class.
+            </summary>
+            <param name="blobTracker">Module used for blob tracking.</param>
+        </member>
+        <member name="M:Gestures.Recognition.GestureRecognizer.StartEvaluation">
+            <summary>
+            Starts the evaluation of gesture input.
+            </summary>               
+        </member>
+        <member name="P:Gestures.Recognition.GestureRecognizer.SynchLock">
+            <summary>
+            Gets the synchronization lock object.
+            </summary>
+            <value>The synchronization lock object.</value>
+        </member>
+        <member name="P:Gestures.Recognition.GestureRecognizer.RecognitionMode">
+            <summary>
+            Gets a value indicating whether recognizer actually is classifying.
+            </summary>
+            <value><c>true</c> if [recognition mode]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:Gestures.Recognition.Interfaces.ClassificationResult">
+            <summary>
+            Holds data of a classified gesture like the name and its parameters.
+            </summary>
+        </member>
+        <member name="T:Gestures.Recognition.Interfaces.IClassificationResult">
+            <summary>
+            Holds result of a gestures classification, i.e. name and additional parameters.
+            </summary>
+        </member>
+        <member name="M:Gestures.Recognition.Interfaces.ClassificationResult.#ctor(System.String,System.Double,Gestures.Geometrie.Vertex.Sample[],System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Gestures.Recognition.Interfaces.ClassificationResult"/> class.
+            </summary>
+            <param name="name">The name of the classified gesture.</param>
+            <param name="probability">The probability of correct classification.</param>
+            <param name="nodeParameters">The node parameters, i.e. gestures execution position on the display.</param>
+            <param name="additionalParameters">The additional parameters if available, i.e. angle, length of the gesture.</param>
+        </member>
+        <member name="M:Gestures.Recognition.Interfaces.ClassificationResult.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
+            </returns>
+        </member>
+        <member name="P:Gestures.Recognition.Interfaces.ClassificationResult.Name">
+            <summary>
+            Gets or sets the name of the classified gesture.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Gestures.Recognition.Interfaces.ClassificationResult.Probability">
+            <summary>
+            Gets or sets the probability of correct classification.
+            </summary>
+            <value>The probability.</value>
+        </member>
+        <member name="P:Gestures.Recognition.Interfaces.ClassificationResult.NodeParameters">
+            <summary>
+            Gets the node parameters.
+            </summary>
+            <value>The node parameters.</value>
+        </member>
+        <member name="P:Gestures.Recognition.Interfaces.ClassificationResult.AdditionalParameters">
+            <summary>
+            Gets the additional parameters.
+            </summary>
+            <value>The additional parameters.</value>
+        </member>
+        <member name="T:Gestures.Recognition.Interfaces.TrackedTouchesDelegate">
+            <summary>
+            Delegate for handling tracking-events provided with both tracked frames.
+            </summary>
+        </member>
+    </members>
+</doc>

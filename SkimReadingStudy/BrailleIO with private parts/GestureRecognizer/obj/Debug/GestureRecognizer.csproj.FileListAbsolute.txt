@@ -1,0 +1,10 @@
+C:\Users\Dillon\Documents\Stuttgart Research Summer 2016\Braille display\BrailleIO with private parts\GestureRecognizer\bin\Debug\GestureRecognizerBase.dll
+C:\Users\Dillon\Documents\Stuttgart Research Summer 2016\Braille display\BrailleIO with private parts\GestureRecognizer\bin\Debug\GestureRecognizerBase.pdb
+C:\Users\Dillon\Documents\Stuttgart Research Summer 2016\Braille display\BrailleIO with private parts\GestureRecognizer\obj\Debug\GestureRecognizer.csprojResolveAssemblyReference.cache
+C:\Users\Dillon\Documents\Stuttgart Research Summer 2016\Braille display\BrailleIO with private parts\GestureRecognizer\obj\Debug\GestureRecognizerBase.dll
+C:\Users\Dillon\Documents\Stuttgart Research Summer 2016\Braille display\BrailleIO with private parts\GestureRecognizer\obj\Debug\GestureRecognizerBase.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\PDFAnalyzer\PDFAnalyzer\BrailleIO with private parts\GestureRecognizer\bin\Debug\GestureRecognizerBase.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\PDFAnalyzer\PDFAnalyzer\BrailleIO with private parts\GestureRecognizer\bin\Debug\GestureRecognizerBase.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\PDFAnalyzer\PDFAnalyzer\BrailleIO with private parts\GestureRecognizer\obj\Debug\GestureRecognizer.csprojResolveAssemblyReference.cache
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\PDFAnalyzer\PDFAnalyzer\BrailleIO with private parts\GestureRecognizer\obj\Debug\GestureRecognizerBase.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\PDFAnalyzer\PDFAnalyzer\BrailleIO with private parts\GestureRecognizer\obj\Debug\GestureRecognizerBase.pdb

@@ -1,0 +1,10 @@
+C:\Users\Dillon\Documents\Stuttgart Research Summer 2016\Braille display\BrailleIO with private parts\BrailleIO_Interfaces\bin\Debug\BrailleIO_Interfaces.dll
+C:\Users\Dillon\Documents\Stuttgart Research Summer 2016\Braille display\BrailleIO with private parts\BrailleIO_Interfaces\bin\Debug\BrailleIO_Interfaces.pdb
+C:\Users\Dillon\Documents\Stuttgart Research Summer 2016\Braille display\BrailleIO with private parts\BrailleIO_Interfaces\obj\Debug\BrailleIO_Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\Dillon\Documents\Stuttgart Research Summer 2016\Braille display\BrailleIO with private parts\BrailleIO_Interfaces\obj\Debug\BrailleIO_Interfaces.dll
+C:\Users\Dillon\Documents\Stuttgart Research Summer 2016\Braille display\BrailleIO with private parts\BrailleIO_Interfaces\obj\Debug\BrailleIO_Interfaces.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\PDFAnalyzer\PDFAnalyzer\BrailleIO with private parts\BrailleIO_Interfaces\bin\Debug\BrailleIO_Interfaces.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\PDFAnalyzer\PDFAnalyzer\BrailleIO with private parts\BrailleIO_Interfaces\bin\Debug\BrailleIO_Interfaces.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\PDFAnalyzer\PDFAnalyzer\BrailleIO with private parts\BrailleIO_Interfaces\obj\Debug\BrailleIO_Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\PDFAnalyzer\PDFAnalyzer\BrailleIO with private parts\BrailleIO_Interfaces\obj\Debug\BrailleIO_Interfaces.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\PDFAnalyzer\PDFAnalyzer\BrailleIO with private parts\BrailleIO_Interfaces\obj\Debug\BrailleIO_Interfaces.pdb

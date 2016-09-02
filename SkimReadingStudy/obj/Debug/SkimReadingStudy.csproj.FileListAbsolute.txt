@@ -1,0 +1,93 @@
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\bin\Debug\MetecBD.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\bin\Debug\Resources\de-chardefs8.cti
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\bin\Debug\Resources\digits6DotsPlusDot6.uti
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\bin\Debug\Resources\unicode.dis
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\bin\Debug\SkimReadingStudy.exe.config
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\bin\Debug\SkimReadingStudy.exe.manifest
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\bin\Debug\SkimReadingStudy.application
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\bin\Debug\SkimReadingStudy.exe
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\bin\Debug\SkimReadingStudy.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\bin\Debug\BrailleIO.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\bin\Debug\BrailleIOBrailleDisAdapter.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\bin\Debug\BrailleIO_Interfaces.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\bin\Debug\BrailleRenderer.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\bin\Debug\GestureRecognizerBase.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\bin\Debug\HBBrailleDisV2.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\bin\Debug\BrailleIOBrailleDisAdapter.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\bin\Debug\BrailleIO_Interfaces.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\bin\Debug\BrailleRenderer.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\bin\Debug\GestureRecognizerBase.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\bin\Debug\HBBrailleDisV2.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\bin\Debug\BrailleIO.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.csprojResolveAssemblyReference.cache
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.Form1.resources
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.Properties.Resources.resources
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.csproj.GenerateResource.Cache
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.exe.manifest
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.application
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.exe
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.pdb
+G:\SkimReadingStudy\SkimReadingStudy\bin\Debug\SkimReadingStudy.exe.config
+G:\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.exe
+G:\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.pdb
+G:\SkimReadingStudy\SkimReadingStudy\bin\Debug\Resources\de-chardefs8.cti
+G:\SkimReadingStudy\SkimReadingStudy\bin\Debug\Resources\digits6DotsPlusDot6.uti
+G:\SkimReadingStudy\SkimReadingStudy\bin\Debug\Resources\unicode.dis
+G:\SkimReadingStudy\SkimReadingStudy\bin\Debug\MetecBD.dll
+G:\SkimReadingStudy\SkimReadingStudy\bin\Debug\SkimReadingStudy.exe.manifest
+G:\SkimReadingStudy\SkimReadingStudy\bin\Debug\SkimReadingStudy.application
+G:\SkimReadingStudy\SkimReadingStudy\bin\Debug\SkimReadingStudy.exe
+G:\SkimReadingStudy\SkimReadingStudy\bin\Debug\SkimReadingStudy.pdb
+G:\SkimReadingStudy\SkimReadingStudy\bin\Debug\BrailleIO.dll
+G:\SkimReadingStudy\SkimReadingStudy\bin\Debug\BrailleIOBrailleDisAdapter.dll
+G:\SkimReadingStudy\SkimReadingStudy\bin\Debug\BrailleIO_Interfaces.dll
+G:\SkimReadingStudy\SkimReadingStudy\bin\Debug\BrailleRenderer.dll
+G:\SkimReadingStudy\SkimReadingStudy\bin\Debug\GestureRecognizerBase.dll
+G:\SkimReadingStudy\SkimReadingStudy\bin\Debug\HBBrailleDisV2.dll
+G:\SkimReadingStudy\SkimReadingStudy\bin\Debug\BrailleIOBrailleDisAdapter.pdb
+G:\SkimReadingStudy\SkimReadingStudy\bin\Debug\BrailleIO_Interfaces.pdb
+G:\SkimReadingStudy\SkimReadingStudy\bin\Debug\BrailleRenderer.pdb
+G:\SkimReadingStudy\SkimReadingStudy\bin\Debug\GestureRecognizerBase.pdb
+G:\SkimReadingStudy\SkimReadingStudy\bin\Debug\HBBrailleDisV2.pdb
+G:\SkimReadingStudy\SkimReadingStudy\bin\Debug\BrailleIO.pdb
+G:\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.csprojResolveAssemblyReference.cache
+G:\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.Form1.resources
+G:\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.Properties.Resources.resources
+G:\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.csproj.GenerateResource.Cache
+G:\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.exe.manifest
+G:\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.application
+F:\SkimReadingStudy\SkimReadingStudy\bin\Debug\SkimReadingStudy.exe.config
+F:\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.exe
+F:\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\bin\Debug\SkimReadingStudy.exe.config
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.exe
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\bin\Debug\Resources\de-chardefs8.cti
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\bin\Debug\Resources\digits6DotsPlusDot6.uti
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\bin\Debug\Resources\unicode.dis
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\bin\Debug\MetecBD.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\bin\Debug\SkimReadingStudy.exe.manifest
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\bin\Debug\SkimReadingStudy.application
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\bin\Debug\SkimReadingStudy.exe
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\bin\Debug\SkimReadingStudy.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\bin\Debug\BrailleIO.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\bin\Debug\BrailleIOBrailleDisAdapter.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\bin\Debug\BrailleIO_Interfaces.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\bin\Debug\BrailleRenderer.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\bin\Debug\GestureRecognizerBase.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\bin\Debug\HBBrailleDisV2.dll
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\bin\Debug\BrailleIOBrailleDisAdapter.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\bin\Debug\BrailleIO_Interfaces.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\bin\Debug\BrailleRenderer.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\bin\Debug\GestureRecognizerBase.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\bin\Debug\HBBrailleDisV2.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\bin\Debug\BrailleIO.pdb
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.csprojResolveAssemblyReference.cache
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.Form1.resources
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.Properties.Resources.resources
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.csproj.GenerateResource.Cache
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.exe.manifest
+C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.application
+G:\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\bin\Debug\SkimReadingStudy.exe.config
+G:\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.exe
+G:\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\obj\Debug\SkimReadingStudy.pdb
