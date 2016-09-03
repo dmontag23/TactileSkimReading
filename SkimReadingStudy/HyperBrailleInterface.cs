@@ -5,6 +5,7 @@ using System;
 using System.Collections;
 using System.Collections.Specialized;
 using System.Drawing;
+using System.Windows.Forms;
 
 namespace SkimReadingStudy
 {
@@ -18,9 +19,10 @@ namespace SkimReadingStudy
         private BrailleIOViewRange viewRangeCurrentlySelected = null;      // keeps track of the view range currently selected on the device
 
         private GestureInterpreter gestinterp = new GestureInterpreter();  // interprets gestures
-        private TextToSpeech txtToSpeech = null;                           // controls text to speech output
         private Selection select = new Selection();                        // selects the closest view range to the currently selected view range
         private Paper paperOnDisplay = null;                               // keeps track of the paper to interact with
+        private TextBox selectedText = null;                               // keeps track of the text currently on display
+        private TextBox pageNumDisplay = null;                             // keeps track of the page currently on display
 
         // Timers
         private System.Timers.Timer selectionTimer = new System.Timers.Timer(500);  // controls blinking on HyperBraille Device
@@ -55,10 +57,16 @@ namespace SkimReadingStudy
             this.paperOnDisplay = paper;
         }
 
-        // set the text to speech class to use from the Form class
-        public void SetTextToSpeech(TextToSpeech txtToSpeech)
+        // set the TextBox for the HyperBraille to interact with
+        public void SetParagraphTextBox(TextBox selectedText)
         {
-            this.txtToSpeech = txtToSpeech;
+            this.selectedText = selectedText;
+        }
+
+        // set the TextBox for the HyperBraille to interact with
+        public void SetPageTextBox(TextBox pageNumDisplay)
+        {
+            this.pageNumDisplay = pageNumDisplay;
         }
 
         #endregion
@@ -88,20 +96,19 @@ namespace SkimReadingStudy
         // given a <NameOfViewRange, ViewRange> pair, display these View Ranges on the HyperBraille Device
         public void DisplayViewRanges(OrderedDictionary viewRangesToDisplay)
         {
-            foreach (DictionaryEntry de in viewRangesToDisplay)
-            {
-                mainscreen.AddViewRange(de.Key as String, de.Value as BrailleIOViewRange);
-            }
+            foreach (DictionaryEntry de in viewRangesToDisplay) mainscreen.AddViewRange(de.Key as String, de.Value as BrailleIOViewRange);
             Refresh();
+            pageNumDisplay.Text = paperOnDisplay.GetCurrentPageDisplayed().ToString();        // set the page number in the text box displayed to the user
         }
 
         // given a View Range, select it
         public void SelectViewRange(BrailleIOViewRange viewRange)
         {
-            txtToSpeech.CancelSpeaking();                     // cancel anything that is being spoken
+            selectedText.Clear();                             // clear any text in the text box on display
             if (selectionTimer.Enabled == true) StopBlink();  // stop the blinking of any previously selected section
             viewRangeCurrentlySelected = viewRange;           // update the view range currently selected
             selectionTimer.Start();                           // start the blinking cycle on this new selected section
+            selectedText.Text = paperOnDisplay.GetContent(viewRangeCurrentlySelected.Name); // set the text in the text box to be the text just selected by the user
         }
 
         // given a point, select the View Range on the HyperBraille at that point, return true if a valid view range is found and false otherwise
@@ -169,22 +176,13 @@ namespace SkimReadingStudy
             SelectViewRange(viewRanges[indexToSelect] as BrailleIOViewRange);  // select the new view range
         }
 
-        // speaks or pauses the speaking of the view range currently selected
-        public void SpeakViewRangeCurrentlySelected()
-        {
-            if (viewRangeCurrentlySelected != null)
-            {
-                txtToSpeech.SpeakOrPauseText(paperOnDisplay.GetContent(viewRangeCurrentlySelected.Name));  // get the content of the view range currently selected and either pause or read it
-            }
-        }
-
         // given a direction to flip, flip the page on the HyperBraille device either forward or backward
         public void FlipPage(String direction)
         {
             // ensures the HyperBraille has a paper to interact with
             if (paperOnDisplay != null)
             {
-                txtToSpeech.CancelSpeaking();    // cancel anything that is being spoken
+                selectedText.Clear();                             // clear any text in the text box on display
 
                 // flip the page back
                 if (direction == "previous")
@@ -215,7 +213,8 @@ namespace SkimReadingStudy
         // deselect everything on the HyperBraille Device
         public void DeselectAll()
         {
-            txtToSpeech.CancelSpeaking();                     // cancel anything that is speaking
+            selectedText.Clear();                             // clear any text in the text box on display
+            pageNumDisplay.Clear();                           // clear any page number in the text box on display
             if (selectionTimer.Enabled == true) StopBlink();  // stop the blinking of any previously selected section
             viewRangeCurrentlySelected = null;                // update the view range currently selected
         }

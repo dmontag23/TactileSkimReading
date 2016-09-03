@@ -30,3 +30,11 @@ C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\Sk
 C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.csproj.GenerateResource.Cache
 C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.dll
 C:\Users\montagdn\Documents\Stuttgart Research Summer 2016\Skim Reading Study\SkimReadingStudy\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.pdb
+C:\Users\Dillon\Documents\Stuttgart Research Summer 2016\Skim Reading App\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\HBBrailleDisV2\bin\Debug\MetecBD.dll
+C:\Users\Dillon\Documents\Stuttgart Research Summer 2016\Skim Reading App\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\HBBrailleDisV2\bin\Debug\HBBrailleDisV2.dll
+C:\Users\Dillon\Documents\Stuttgart Research Summer 2016\Skim Reading App\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\HBBrailleDisV2\bin\Debug\HBBrailleDisV2.pdb
+C:\Users\Dillon\Documents\Stuttgart Research Summer 2016\Skim Reading App\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.csprojResolveAssemblyReference.cache
+C:\Users\Dillon\Documents\Stuttgart Research Summer 2016\Skim Reading App\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.SplashSerialInfo.resources
+C:\Users\Dillon\Documents\Stuttgart Research Summer 2016\Skim Reading App\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.csproj.GenerateResource.Cache
+C:\Users\Dillon\Documents\Stuttgart Research Summer 2016\Skim Reading App\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.dll
+C:\Users\Dillon\Documents\Stuttgart Research Summer 2016\Skim Reading App\SkimReadingStudy\BrailleIO with private parts\BrailleIO with private parts\HBBrailleDisV2\obj\Debug\HBBrailleDisV2.pdb

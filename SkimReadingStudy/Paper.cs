@@ -15,10 +15,7 @@ namespace SkimReadingStudy
         // constructor - add a page to the list for each page in the paper and set the current page displayed to 1
         public Paper(String nameOfPaper, int numOfPages)
         {
-            for (int i = 1; i <= numOfPages; i++)
-            {
-                listOfPages.Add(new Page(nameOfPaper, i));
-            }
+            for (int i = 1; i <= numOfPages; i++) listOfPages.Add(new Page(nameOfPaper, i));
             currentPageNumDisplayed = 1;
         }
 

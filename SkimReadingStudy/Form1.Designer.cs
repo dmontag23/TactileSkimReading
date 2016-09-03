@@ -33,6 +33,10 @@
             this.clear = new System.Windows.Forms.Button();
             this.exit = new System.Windows.Forms.Button();
             this.paper1 = new System.Windows.Forms.Button();
+            this.previous = new System.Windows.Forms.Button();
+            this.next = new System.Windows.Forms.Button();
+            this.selectedText = new System.Windows.Forms.TextBox();
+            this.pageNumDisplay = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // paper2
@@ -85,11 +89,53 @@
             this.paper1.UseVisualStyleBackColor = true;
             this.paper1.Click += new System.EventHandler(this.paper1_Click);
             // 
+            // previous
+            // 
+            this.previous.Location = new System.Drawing.Point(105, 96);
+            this.previous.Name = "previous";
+            this.previous.Size = new System.Drawing.Size(84, 23);
+            this.previous.TabIndex = 5;
+            this.previous.Text = "Previous";
+            this.previous.UseVisualStyleBackColor = true;
+            this.previous.Click += new System.EventHandler(this.previous_Click);
+            // 
+            // next
+            // 
+            this.next.Location = new System.Drawing.Point(286, 96);
+            this.next.Name = "next";
+            this.next.Size = new System.Drawing.Size(75, 23);
+            this.next.TabIndex = 6;
+            this.next.Text = "Next";
+            this.next.UseVisualStyleBackColor = true;
+            this.next.Click += new System.EventHandler(this.next_Click);
+            // 
+            // selectedText
+            // 
+            this.selectedText.Location = new System.Drawing.Point(15, 146);
+            this.selectedText.Multiline = true;
+            this.selectedText.Name = "selectedText";
+            this.selectedText.ReadOnly = true;
+            this.selectedText.Size = new System.Drawing.Size(427, 169);
+            this.selectedText.TabIndex = 7;
+            // 
+            // pageNumDisplay
+            // 
+            this.pageNumDisplay.Location = new System.Drawing.Point(180, 330);
+            this.pageNumDisplay.Name = "pageNumDisplay";
+            this.pageNumDisplay.ReadOnly = true;
+            this.pageNumDisplay.Size = new System.Drawing.Size(100, 20);
+            this.pageNumDisplay.TabIndex = 8;
+            this.pageNumDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(454, 114);
+            this.ClientSize = new System.Drawing.Size(454, 362);
+            this.Controls.Add(this.pageNumDisplay);
+            this.Controls.Add(this.selectedText);
+            this.Controls.Add(this.next);
+            this.Controls.Add(this.previous);
             this.Controls.Add(this.paper1);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.clear);
@@ -98,9 +144,8 @@
             this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Form1";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -111,6 +156,10 @@
         private System.Windows.Forms.Button clear;
         private System.Windows.Forms.Button exit;
         private System.Windows.Forms.Button paper1;
+        private System.Windows.Forms.Button previous;
+        private System.Windows.Forms.Button next;
+        private System.Windows.Forms.TextBox selectedText;
+        private System.Windows.Forms.TextBox pageNumDisplay;
     }
 }
 
