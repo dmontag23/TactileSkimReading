@@ -86,6 +86,12 @@ namespace SkimReadingStudy
                 // flip to the next page via the PageUp key
                 if (keyData == Keys.Next) hb.FlipPage("next");
 
+                // select the previous logical block of content
+                if (keyData == Keys.P) hb.SelectOrderedSectionToRead("previous");
+
+                // select the next logical block of content
+                if (keyData == Keys.N) hb.SelectOrderedSectionToRead("next");
+
                 // start gesture detection via the Space key
                 if (keyData == Keys.Space)
                 {
