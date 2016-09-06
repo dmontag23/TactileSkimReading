@@ -61,24 +61,24 @@ namespace SkimReadingStudy
             hb.SelectOrderedSectionToRead("next");
         }
 
-        # region Keyboard Listener Methods
+        #region Keyboard Listener Methods
 
         // Listener for the keyboard
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
             if (hb.GetPaperOnDisplay() != null)  // ensures there is a paper on the HyperBraille Device before listening to any keyboard buttons
             {
-                // select the next view range left from the current view range via the left arrow key
-                if (keyData == Keys.Left) hb.SelectViewRange(select.SelectClosestViewRange("left", hb.GetMainscreen(), hb.GetViewRangeCurrentlySelected()));
+                // select the next view range left from the current view range via the shift and left arrow key
+                if (keyData == (Keys.Left | Keys.Shift)) hb.SelectViewRange(select.SelectClosestViewRange("left", hb.GetMainscreen(), hb.GetViewRangeCurrentlySelected()));
 
-                // select the next view range right from the current view range via the right arrow key
-                if (keyData == Keys.Right) hb.SelectViewRange(select.SelectClosestViewRange("right", hb.GetMainscreen(), hb.GetViewRangeCurrentlySelected()));
+                // select the next view range right from the current view range via the shift and right arrow key
+                if (keyData == (Keys.Right | Keys.Shift)) hb.SelectViewRange(select.SelectClosestViewRange("right", hb.GetMainscreen(), hb.GetViewRangeCurrentlySelected()));
 
-                // select the next view range up from the current view range via the up arrow key
-                if (keyData == Keys.Up) hb.SelectViewRange(select.SelectClosestViewRange("up", hb.GetMainscreen(), hb.GetViewRangeCurrentlySelected()));
+                // select the next view range up from the current view range via the shift and up arrow key
+                if (keyData == (Keys.Up | Keys.Shift)) hb.SelectViewRange(select.SelectClosestViewRange("up", hb.GetMainscreen(), hb.GetViewRangeCurrentlySelected()));
 
-                // select the next view range down from the current view range via the down arrow key
-                if (keyData == Keys.Down) hb.SelectViewRange(select.SelectClosestViewRange("down", hb.GetMainscreen(), hb.GetViewRangeCurrentlySelected()));
+                // select the next view range down from the current view range via the shift and down arrow key
+                if (keyData == (Keys.Down | Keys.Shift)) hb.SelectViewRange(select.SelectClosestViewRange("down", hb.GetMainscreen(), hb.GetViewRangeCurrentlySelected()));
 
                 // flip to the previous page via the PageDown key
                 if (keyData == Keys.PageUp) hb.FlipPage("previous");
@@ -92,8 +92,8 @@ namespace SkimReadingStudy
                 // select the next logical block of content
                 if (keyData == Keys.N) hb.SelectOrderedSectionToRead("next");
 
-                // start gesture detection via the Space key
-                if (keyData == Keys.Space)
+                // start gesture detection via the Escape key
+                if (keyData == Keys.Escape)
                 {
                     hb.StartGestureDetection();
                     return true;  // do not process the space key press any further

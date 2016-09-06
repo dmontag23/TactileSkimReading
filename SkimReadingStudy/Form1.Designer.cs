@@ -111,16 +111,16 @@
             // 
             // selectedText
             // 
-            this.selectedText.Location = new System.Drawing.Point(15, 146);
+            this.selectedText.Location = new System.Drawing.Point(15, 125);
             this.selectedText.Multiline = true;
             this.selectedText.Name = "selectedText";
             this.selectedText.ReadOnly = true;
-            this.selectedText.Size = new System.Drawing.Size(427, 169);
-            this.selectedText.TabIndex = 7;
+            this.selectedText.Size = new System.Drawing.Size(427, 543);
+            this.selectedText.TabIndex = 1;
             // 
             // pageNumDisplay
             // 
-            this.pageNumDisplay.Location = new System.Drawing.Point(180, 330);
+            this.pageNumDisplay.Location = new System.Drawing.Point(180, 678);
             this.pageNumDisplay.Name = "pageNumDisplay";
             this.pageNumDisplay.ReadOnly = true;
             this.pageNumDisplay.Size = new System.Drawing.Size(100, 20);
@@ -131,7 +131,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(454, 362);
+            this.ClientSize = new System.Drawing.Size(471, 706);
             this.Controls.Add(this.pageNumDisplay);
             this.Controls.Add(this.selectedText);
             this.Controls.Add(this.next);
