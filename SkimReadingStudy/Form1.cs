@@ -96,7 +96,7 @@ namespace SkimReadingStudy
                 if (keyData == Keys.Escape)
                 {
                     hb.StartGestureDetection();
-                    return true;  // do not process the space key press any further
+                    return true;  // do not process the escape key press any further
                 }
             }
 
