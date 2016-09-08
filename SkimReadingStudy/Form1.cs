@@ -92,11 +92,11 @@ namespace SkimReadingStudy
                 // select the next logical block of content
                 if (keyData == Keys.N) hb.SelectOrderedSectionToRead("next");
 
-                // start gesture detection via the Escape key
-                if (keyData == Keys.Escape)
+                // start gesture detection via the Q key
+                if (keyData == Keys.Q)
                 {
                     hb.StartGestureDetection();
-                    return true;  // do not process the escape key press any further
+                    return true;  // do not process the Q key press any further
                 }
             }
 
